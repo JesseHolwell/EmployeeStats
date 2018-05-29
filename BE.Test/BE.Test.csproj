@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BE.Data\BE.Data.csproj">
+      <Project>{a419fc2f-c31c-4a42-997e-c650fd72d20b}</Project>
+      <Name>BE.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BE.Logic\BE.Logic.csproj">
       <Project>{9453c3c8-6578-4af7-8445-f4411e3f0170}</Project>
       <Name>BE.Logic</Name>
